@@ -1,6 +1,6 @@
 import { useLanguage } from '../LanguageProvider';
 import { motion } from 'framer-motion';
-import { ShieldCheck, CloudLightning, HeadphonesIcon, Settings2 } from 'lucide-react';
+import { ShieldCheck, CloudLightning, HeadphonesIcon, Settings2, BadgeDollarSign } from 'lucide-react';
 
 export function Why() {
   const { t } = useLanguage();
@@ -33,6 +33,13 @@ export function Why() {
       arTitle: 'دعم فني محلي',
       enDesc: 'A Jordanian team ready to assist you by phone, field visits, or remote sessions.',
       arDesc: 'فريق أردني جاهز لخدمتك هاتفياً، ميدانياً، أو عن بعد لتذليل أي عقبات.'
+    },
+    {
+      icon: BadgeDollarSign,
+      enTitle: 'No Hidden Costs',
+      arTitle: 'لا مصاريف مخفية',
+      enDesc: 'Transparent pricing with no surprises — what you see is exactly what you pay.',
+      arDesc: 'أسعار شفافة بدون أي مفاجآت — ما تراه هو ما تدفعه بالضبط، لا رسوم إضافية مخفية.'
     }
   ];
 
