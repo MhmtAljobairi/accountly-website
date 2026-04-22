@@ -55,7 +55,7 @@ export function Hero() {
               <ArrowRight className={`w-[18px] h-[18px] ${isRtl ? 'rotate-180' : ''}`} />
             </a>
             <a
-              href="https://wa.me/962XXXXXXXXX"
+              href="https://wa.me/962795319308"
               target="_blank"
               rel="noopener noreferrer"
               data-testid="btn-hero-whatsapp"

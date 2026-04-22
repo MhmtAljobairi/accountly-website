@@ -79,7 +79,7 @@ export function Contact() {
                 {t('إرسال الطلب', 'Submit Request')}
               </button>
               <a 
-                href="https://wa.me/962000000000" 
+                href="https://wa.me/962795319308" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 bg-[var(--color-brand-wa)] text-white rounded-xl px-[26px] py-[13px] text-[15px] font-bold no-underline transition-all hover:bg-[#1da851] hover:-translate-y-0.5 hover:shadow-[0_12px_36px_rgba(37,211,102,0.3)]"
