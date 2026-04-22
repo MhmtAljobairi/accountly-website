@@ -21,10 +21,10 @@ export function FAQ() {
       enA: 'Yes, the system is designed to fully comply with the Income and Sales Tax Department requirements, and is ready for integration with the national e-invoicing system (Jo-Fawateer).'
     },
     {
-      arQ: 'ما هي تكلفة الاشتراك؟ هل أدفع مرة واحدة أم سنوياً؟',
-      enQ: 'What is the subscription cost? Do I pay once or annually?',
-      arA: 'أكاونتلي يعمل بنظام الاشتراك السنوي (SaaS). التكلفة تعتمد على عدد المستخدمين والأنظمة التي تحتاجها شركتك. هذا يضمن لك الحصول على التحديثات المستمرة والدعم الفني مجاناً.',
-      enA: 'Accountly operates on an annual subscription model (SaaS). The cost depends on the number of users and modules your company needs. This ensures you get continuous updates and free technical support.'
+      arQ: 'هل يمكن الدخول على النظام من الويب فقط؟',
+      enQ: 'Can I only access the system from the web?',
+      arA: 'لا، الوصول لا يقتصر على المتصفح. بالإضافة إلى واجهة الويب الكاملة، نوفر لعملائنا تطبيقات موبايل متخصصة متاحة على iOS وAndroid — مثل تطبيق المندوب، تطبيق نقطة البيع، وتطبيق المستودعات — لتتمكن من إدارة عملك أينما كنت.',
+      enA: 'No, access is not limited to the browser. In addition to the full web interface, we provide our clients with specialized mobile apps available on iOS and Android — such as the Sales Rep app, POS app, and Warehouse app — so you can manage your business from anywhere.'
     },
     {
       arQ: 'كيف يتم نقل بياناتنا من نظامنا القديم إلى أكاونتلي؟',
