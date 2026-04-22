@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '../LanguageProvider';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, MessageCircle } from 'lucide-react';
+import { Menu, X, MessageCircle, LogIn } from 'lucide-react';
 
 export function Navbar() {
   const { t, language, setLanguage } = useLanguage();
@@ -84,6 +84,16 @@ export function Navbar() {
           </button>
           
           <a
+            href="https://app.accountly.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:flex items-center gap-[7px] bg-[var(--color-brand-primary)] text-white rounded-[10px] px-4 py-2 text-[13px] font-bold transition-all hover:-translate-y-[1px] hover:shadow-[0_6px_20px_rgba(0,8,119,0.25)] hover:bg-[#0b1d8f] whitespace-nowrap"
+          >
+            <LogIn className="w-[16px] h-[16px]" />
+            {t('تسجيل الدخول', 'Login')}
+          </a>
+
+          <a
             href="https://wa.me/962795319308"
             target="_blank"
             rel="noopener noreferrer"
@@ -134,10 +144,19 @@ export function Navbar() {
                 {language === 'ar' ? 'Switch to English' : 'التبديل للعربية'}
               </button>
               <a
+                href="https://app.accountly.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-[7px] bg-[var(--color-brand-primary)] text-white rounded-[10px] px-4 py-3 text-[15px] font-bold"
+              >
+                <LogIn className="w-[18px] h-[18px]" />
+                {t('تسجيل الدخول', 'Login')}
+              </a>
+              <a
                 href="https://wa.me/962795319308"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-[7px] bg-[var(--color-brand-wa)] text-white rounded-[10px] px-4 py-3 text-[15px] font-bold mt-2"
+                className="flex items-center justify-center gap-[7px] bg-[var(--color-brand-wa)] text-white rounded-[10px] px-4 py-3 text-[15px] font-bold"
               >
                 <MessageCircle className="w-[18px] h-[18px]" />
                 {t('تواصل واتساب', 'WhatsApp')}
