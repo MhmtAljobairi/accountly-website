@@ -8,7 +8,7 @@ export function Industries() {
     { ar: 'قطاع التجزئة', en: 'Retail Sector' },
     { ar: 'المصانع والإنتاج', en: 'Factories & Production' },
     { ar: 'شركات التوزيع', en: 'Distribution Cos.' },
-    { ar: 'إدارة المناديب', en: 'Sales Reps Management' }
+    { ar: 'إدارة المندوبين', en: 'Sales Reps Management' }
   ];
 
   return (

@@ -57,7 +57,7 @@ export function Features() {
     { 
       id: 7, 
       icon: Truck, 
-      arName: 'المناديب والتوزيع', 
+      arName: 'المندوبين والتوزيع', 
       enName: 'Reps & Distribution',
       arDesc: 'تتبع المبيعات الخارجية، مسارات المندوبين، العمولات، وتطبيق الموبايل للمندوب.',
       enDesc: 'Track field sales, rep routes, commissions, and mobile app for field agents.'
