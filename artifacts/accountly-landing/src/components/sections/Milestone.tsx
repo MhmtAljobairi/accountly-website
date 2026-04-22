@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../LanguageProvider';
 import { motion, useInView } from 'framer-motion';
-import { TrendingUp, Users, Clock, Star } from 'lucide-react';
+import { TrendingUp, Users, LayoutGrid, Star } from 'lucide-react';
 
 function useCountUp(target: number, duration = 2000, start = false) {
   const [count, setCount] = useState(0);
@@ -23,6 +23,7 @@ function useCountUp(target: number, duration = 2000, start = false) {
 interface StatCardProps {
   icon: React.ElementType;
   value: string;
+  rawDisplay?: string;
   animatedValue?: number;
   suffix?: string;
   label: string;
@@ -32,7 +33,7 @@ interface StatCardProps {
   started: boolean;
 }
 
-function StatCard({ icon: Icon, value, animatedValue, suffix = '', label, subLabel, accent, delay = 0, started }: StatCardProps) {
+function StatCard({ icon: Icon, value, rawDisplay, animatedValue, suffix = '', label, subLabel, accent, delay = 0, started }: StatCardProps) {
   const counted = useCountUp(animatedValue ?? 0, 2200, started && !!animatedValue);
   const displayVal = animatedValue ? counted.toLocaleString() : value;
 
@@ -59,7 +60,7 @@ function StatCard({ icon: Icon, value, animatedValue, suffix = '', label, subLab
           <Icon className={`w-5 h-5 ${accent ? 'text-[var(--color-brand-cyan)]' : 'text-[var(--color-brand-primary)]'}`} />
         </div>
         <div className={`text-[clamp(36px,4vw,52px)] font-black leading-none mb-1.5 ${accent ? 'text-[var(--color-brand-cyan)]' : 'text-[var(--color-brand-primary)]'}`}>
-          +{displayVal}{suffix}
+          {rawDisplay ?? `+${displayVal}${suffix}`}
         </div>
         <div className={`text-[16px] font-bold mb-1 ${accent ? 'text-white' : 'text-gray-800'}`}>{label}</div>
         <div className={`text-[13px] leading-[1.6] ${accent ? 'text-white/60' : 'text-gray-400'}`}>{subLabel}</div>
@@ -107,14 +108,13 @@ export function Milestone() {
         <div ref={ref} className="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
           <StatCard
             icon={TrendingUp}
-            animatedValue={2500000}
+            value=""
+            rawDisplay={isRtl ? '2.5+ مليون' : '2.5M+'}
             label={t('حركة مالية مُعالَجة', 'Financial Transactions')}
             subLabel={t('فواتير، مدفوعات، وحركات مخزنية أدارها النظام بدقة تامة', 'Invoices, payments & stock movements handled with full accuracy')}
             accent
             delay={0}
             started={inView}
-            suffix=""
-            value=""
           />
           <StatCard
             icon={Users}
@@ -134,11 +134,10 @@ export function Milestone() {
             started={inView}
           />
           <StatCard
-            icon={Clock}
-            value="99.9"
-            suffix="%"
-            label={t('استقرار النظام', 'System Uptime')}
-            subLabel={t('لا توقف، لا بطء — عملك يستمر على مدار الساعة', 'No downtime, no slowdowns — your business runs around the clock')}
+            icon={LayoutGrid}
+            value="8"
+            label={t('وحدات متكاملة في نظام واحد', 'Integrated Modules')}
+            subLabel={t('محاسبة، مخزن، مبيعات، إنتاج، مندوبين، POS، فروع، وأكثر', 'Accounting, inventory, sales, production, reps, POS, branches & more')}
             delay={0.3}
             started={inView}
           />

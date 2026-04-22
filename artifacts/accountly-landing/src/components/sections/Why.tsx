@@ -93,9 +93,9 @@ export function Why() {
             <div className="absolute -bottom-[50px] -left-[50px] w-[180px] h-[180px] rounded-full bg-[rgba(1,162,255,0.1)]" />
             
             <div className="relative z-10">
-              <div className="text-[72px] font-black text-[var(--color-brand-cyan)] leading-none mb-2">99.9%</div>
-              <div className="text-[18px] font-bold mb-1">{t('نسبة استقرار النظام', 'System Uptime')}</div>
-              <div className="text-[13px] text-white/60 mb-5">{t('خوادم عالمية تضمن عدم توقف عملك لحظة واحدة', 'Global servers ensuring your business never stops')}</div>
+              <div className="text-[72px] font-black text-[var(--color-brand-cyan)] leading-none mb-2">#1</div>
+              <div className="text-[18px] font-bold mb-1">{t('النظام الأول في السوق الأردني', 'Jordan\'s #1 ERP System')}</div>
+              <div className="text-[13px] text-white/60 mb-5">{t('مُصمَّم خصيصاً لتجار الجملة والتجزئة والمصانع والموزعين في الأردن', 'Purpose-built for Jordanian wholesalers, retailers, factories & distributors')}</div>
               
               <div className="grid grid-cols-2 gap-2.5 mt-5">
                 <div className="bg-white/5 rounded-xl p-4 text-center backdrop-blur-sm">
