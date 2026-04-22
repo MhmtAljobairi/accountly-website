@@ -92,7 +92,7 @@ export function Why() {
               
               <div className="grid grid-cols-2 gap-2.5 mt-5">
                 <div className="bg-white/5 rounded-xl p-4 text-center backdrop-blur-sm">
-                  <div className="text-[22px] font-black">+200</div>
+                  <div className="text-[22px] font-black">+350</div>
                   <div className="text-[11px] text-white/60 mt-0.5">{t('عميل يثق بنا', 'Trusted Clients')}</div>
                 </div>
                 <div className="bg-white/5 rounded-xl p-4 text-center backdrop-blur-sm">

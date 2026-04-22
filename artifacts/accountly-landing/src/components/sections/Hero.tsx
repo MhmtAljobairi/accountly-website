@@ -68,7 +68,7 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-8 mt-11 pt-7 border-t border-border justify-center md:justify-start w-full">
             <div className="flex flex-col">
-              <span className="text-[30px] font-black text-[var(--color-brand-primary)] leading-none">+<em className="text-[var(--color-brand-accent)] not-italic">200</em></span>
+              <span className="text-[30px] font-black text-[var(--color-brand-primary)] leading-none">+<em className="text-[var(--color-brand-accent)] not-italic">350</em></span>
               <span className="text-[13px] text-[var(--color-muted-foreground)] font-semibold mt-1">{t('شركة أردنية', 'Jordanian Companies')}</span>
             </div>
             <div className="flex flex-col">
@@ -76,7 +76,7 @@ export function Hero() {
               <span className="text-[13px] text-[var(--color-muted-foreground)] font-semibold mt-1">{t('أنظمة متكاملة', 'Integrated Modules')}</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-[30px] font-black text-[var(--color-brand-primary)] leading-none">+<em className="text-[var(--color-brand-accent)] not-italic">7</em></span>
+              <span className="text-[30px] font-black text-[var(--color-brand-primary)] leading-none"><em className="text-[var(--color-brand-accent)] not-italic">22</em></span>
               <span className="text-[13px] text-[var(--color-muted-foreground)] font-semibold mt-1">{t('سنوات خبرة', 'Years Experience')}</span>
             </div>
           </div>
