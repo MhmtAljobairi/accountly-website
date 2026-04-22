@@ -3,6 +3,7 @@ import { Hero } from '../components/sections/Hero';
 import { Industries } from '../components/sections/Industries';
 import { Features } from '../components/sections/Features';
 import { Why } from '../components/sections/Why';
+import { Milestone } from '../components/sections/Milestone';
 import { FAQ } from '../components/sections/FAQ';
 import { Contact } from '../components/sections/Contact';
 import { Footer } from '../components/sections/Footer';
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <Hero />
       <Industries />
       <Features />
+      <Milestone />
       <Why />
       <FAQ />
       <Contact />

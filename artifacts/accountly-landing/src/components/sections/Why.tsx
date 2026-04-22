@@ -1,6 +1,6 @@
 import { useLanguage } from '../LanguageProvider';
 import { motion } from 'framer-motion';
-import { ShieldCheck, CloudLightning, HeadphonesIcon, Settings2, BadgeDollarSign, TrendingUp } from 'lucide-react';
+import { ShieldCheck, CloudLightning, HeadphonesIcon, Settings2, BadgeDollarSign } from 'lucide-react';
 
 export function Why() {
   const { t } = useLanguage();
@@ -107,28 +107,6 @@ export function Why() {
                   <div className="text-[11px] text-white/60 mt-0.5">{t('مراقبة وحماية', 'Monitoring & Protection')}</div>
                 </div>
               </div>
-
-              {/* 2.5M transactions highlight */}
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.55, delay: 0.2 }}
-                className="mt-3 rounded-xl px-5 py-4 flex items-center gap-4"
-                style={{ background: 'linear-gradient(135deg, rgba(1,230,255,0.15) 0%, rgba(1,162,255,0.1) 100%)', border: '1px solid rgba(1,230,255,0.25)' }}
-              >
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[var(--color-brand-cyan)]/20 flex items-center justify-center">
-                  <TrendingUp className="w-5 h-5 text-[var(--color-brand-cyan)]" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="text-[26px] font-black text-[var(--color-brand-cyan)] leading-none">
-                    +2.5{t(' مليون', 'M')}
-                  </div>
-                  <div className="text-[12px] text-white/75 mt-0.5 font-medium">
-                    {t('حركة مالية مُعالَجة عبر النظام', 'Financial transactions processed through the system')}
-                  </div>
-                </div>
-              </motion.div>
             </div>
           </motion.div>
         </div>
