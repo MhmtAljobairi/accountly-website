@@ -1,5 +1,6 @@
 import { useLanguage } from '../LanguageProvider';
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import logoImg from '../../assets/accountly-logo.png';
 
 export function Footer() {
   const { t, language } = useLanguage();
@@ -10,18 +11,8 @@ export function Footer() {
         <div className="flex flex-wrap justify-between items-start gap-10 pb-10 border-b border-white/5">
           {/* Brand */}
           <div>
-            <a href="#hero" className="flex items-center gap-2.5 no-underline">
-              <div className="w-10 h-10 bg-white/10 rounded-[10px] flex flex-col items-center justify-center gap-1.5">
-                <span className="w-[22px] h-[2.5px] bg-[var(--color-brand-cyan)] rounded-[2px]" />
-                <span
-                  className={`w-[14px] h-[2.5px] bg-[var(--color-brand-accent)] rounded-[2px] ${
-                    language === 'ar' ? 'self-end mr-1' : 'self-start ml-1'
-                  }`}
-                />
-              </div>
-              <span className="text-[22px] font-bold text-white">
-                account<b className="font-black text-[var(--color-brand-accent)]">ly</b>
-              </span>
+            <a href="#hero" className="flex items-center no-underline">
+              <img src={logoImg} alt="Accountly" className="h-9 w-auto object-contain brightness-0 invert" />
             </a>
             <p className="text-[13px] text-white/50 mt-3 max-w-[280px] leading-[1.7]">
               {t(

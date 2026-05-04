@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLanguage } from '../LanguageProvider';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, LogIn } from 'lucide-react';
+import logoImg from '../../assets/accountly-logo.png';
 
 export function Navbar() {
   const { t, language, setLanguage } = useLanguage();
@@ -44,18 +45,8 @@ export function Navbar() {
     >
       <div className="max-w-[1200px] mx-auto px-5 h-full flex items-center justify-between">
         {/* Logo */}
-        <a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className="flex items-center gap-2.5 no-underline">
-          <div className="w-10 h-10 bg-[var(--color-brand-primary)] rounded-[10px] flex flex-col items-center justify-center gap-1.5">
-            <span className="w-[22px] h-[2.5px] bg-[var(--color-brand-cyan)] rounded-[2px]" />
-            <span
-              className={`w-[14px] h-[2.5px] bg-[var(--color-brand-accent)] rounded-[2px] ${
-                language === 'ar' ? 'self-end mr-1' : 'self-start ml-1'
-              }`}
-            />
-          </div>
-          <span className="text-[22px] font-bold text-[var(--color-brand-primary)]">
-            account<b className="font-black text-[var(--color-brand-accent)]">ly</b>
-          </span>
+        <a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className="flex items-center no-underline">
+          <img src={logoImg} alt="Accountly" className="h-9 w-auto object-contain" />
         </a>
 
         {/* Desktop Links */}
