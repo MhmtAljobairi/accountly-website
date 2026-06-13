@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import LandingPage from "@/pages/LandingPage";
+import PrivacyCashVan from "@/pages/PrivacyCashVan";
 
 const queryClient = new QueryClient();
 
@@ -12,6 +13,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={LandingPage} />
+      <Route path="/privacy-policy/cashvan" component={PrivacyCashVan} />
       <Route component={NotFound} />
     </Switch>
   );
